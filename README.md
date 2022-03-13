@@ -6,10 +6,14 @@
 
 把本仓库clone到本地, 使用命令docker方式在本地运行:
 ```bash
-sudo ./scripts/docker-build.sh # 本地构建镜像
-sudo ./scripts/docker-run.sh # 本地启动运行并监听 8090 端口号
+./scripts/docker-build.sh # 本地构建镜像
+./scripts/docker-run.sh # 本地启动运行并监听 8090 端口号
 ```
 
+或者直接使用已经Docker Hub中的镜像:
+```bash
+docker run -d -p 8090:1443 --name firefox-send-pod alanway/firefox-send
+```
 
 
 [![CircleCI](https://img.shields.io/circleci/project/github/mozilla/send.svg)](https://circleci.com/gh/mozilla/send)
