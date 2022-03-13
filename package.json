@@ -31,14 +31,6 @@
     "android": "cross-env ANDROID=1 npm start",
     "prod": "node server/bin/prod.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test",
-      "post-merge": "npm install",
-      "post-checkout": "scripts/sync-npm-dependencies.sh"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "prettier --single-quote --write",
