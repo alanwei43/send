@@ -15,10 +15,6 @@ describe('Firefox Send homepage', function() {
     }
   });
 
-  it('should have the right title', function() {
-    assert.equal(browser.getTitle(), 'Firefox Send');
-  });
-
   footerLinks.forEach((link, i) => {
     it(`should navigate to the correct page: ${link}`, function() {
       // Click links on bottom of page
