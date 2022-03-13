@@ -122,7 +122,8 @@ const conf = convict({
   },
   sentry_host: {
     format: String,
-    default: 'https://sentry.prod.mozaws.net',
+    // default: 'https://sentry.prod.mozaws.net',
+    default: '',
     env: 'SENTRY_HOST'
   },
   env: {
@@ -147,7 +148,7 @@ const conf = convict({
   },
   base_url: {
     format: 'url',
-    default: 'https://send.firefox.com',
+    default: 'https://demo.alanwei.com',
     env: 'BASE_URL'
   },
   file_dir: {
@@ -172,7 +173,7 @@ const conf = convict({
   },
   fxa_key_scope: {
     format: String,
-    default: 'https://identity.mozilla.com/apps/send',
+    default: '',
     env: 'FXA_KEY_SCOPE'
   },
   fxa_csp_oauth_url: {

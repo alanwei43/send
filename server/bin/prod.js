@@ -29,4 +29,5 @@ app.use(
 
 app.use(pages.notfound);
 
+console.log(`listen: ${config.listen_address}:${config.listen_port}`);
 app.listen(config.listen_port, config.listen_address);

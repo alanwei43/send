@@ -19,6 +19,7 @@ async function getFxaConfig() {
     lastConfigRefresh = Date.now();
   } catch (e) {
     // continue with previous fxaConfig
+    console.log(e);
   }
   return fxaConfig;
 }

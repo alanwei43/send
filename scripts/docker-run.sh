@@ -1,0 +1,1 @@
+docker run -d -p 8090:1443 --name firefox-send-pod firefox-send
